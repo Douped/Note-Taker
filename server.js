@@ -10,7 +10,7 @@ app.use(express.json());
 // middleware for url-encoded form data
 app.use(express.urlencoded({ extended: true }));
 // middleware for public directory
-app.use(express.static("public"));
+app.use(express.static("./Develop/public"));
 
 app.use(routes);
 app.listen(PORT, () =>
